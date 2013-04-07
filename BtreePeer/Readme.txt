@@ -1,5 +1,4 @@
 To find the peers in the same level on a binary tree
-Refer - sampleTree.png for testcase reference
 
 Sample Output: (Refer to the main function for the inputs - for case 6. refer tree_testcasepic.png)
 
