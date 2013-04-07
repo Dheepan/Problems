@@ -57,11 +57,11 @@ class RobotWalk:
                 self.printAllValidPaths(m,n-1,grid,"R"+path)
 
 if __name__=="__main__":
-    grid1=[]
+    #Rectangular Grid containing obstacles - dimension MxN - 0 - walkable grid cell and 1- not walkable grid cell
+    grid=[]
     for line in fileinput.input("Robot_Input.txt"):
         temp=list(line.strip("\n"))
         if len(temp)!=0:
-            grid1.append(temp)
-    #Rectangular Grid containing obstacles - dimension MxN - 0 - walkable grid cell and 1- not walkable grid cell
-    r=RobotWalk(grid1)
+            grid.append(temp)
+    r=RobotWalk(grid)
     r.walk()
