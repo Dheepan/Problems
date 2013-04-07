@@ -9,10 +9,10 @@ class RobotWalk:
         self.n=None
 
     def walk(self):
-        self.generatedVerticesCodeforGrid()
+        self.generateVerticesCodeforGrid()
         self.printAllValidPaths(self.m-1,self.n-1,self.grid,"")
 
-    def generatedVerticesCodeforGrid(self):
+    def generateVerticesCodeforGrid(self):
         if not self.ifRectangularArray():
             print "Not an rectangular Grid"
             raw_input()
@@ -42,7 +42,7 @@ class RobotWalk:
         return True
         
     def printAllValidPaths(self,m,n,grid,path):
-        #if its a invalid edge and just return
+        #if its a invalid vertex and just return
         if grid[m][n]==1:
             return;
         #check if we reached to the top left corner of Grid and print the path
@@ -52,6 +52,7 @@ class RobotWalk:
             #recursively move up marking "D" till we reach top
             if m-1>=0:
                 self.printAllValidPaths(m-1,n,grid,"D"+path)
+            #recursively move left marking "R" till we reach top
             if n-1>=0:
                 self.printAllValidPaths(m,n-1,grid,"R"+path)
 
