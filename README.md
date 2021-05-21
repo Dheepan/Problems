@@ -1,1 +1,1 @@
-This will contain some interestin problems and solutions in python
+This will contain some interesting programming problems.
