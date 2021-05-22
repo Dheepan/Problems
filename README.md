@@ -1,1 +1,1 @@
-This will contain some interesting programming problems.
+This will contain solutions to interesting programming problems.
